@@ -18,7 +18,7 @@
 
 // const para = document.createElement("p");
 // const heading = document.createElement("h1");
-// heading.innerHTML = "exercise 1 niggah";
+// heading.innerHTML = "exercise 1";
 
 // para.appendChild(heading);
 // document.body.appendChild(para);
@@ -39,3 +39,33 @@
 //////////////////////////////////////////////////////////////////////////////
 
 // Building hello world using react
+// const heading = React.createElement("h1", {}, "hey sagar you know what im sayin");
+// const root = ReactDOM.createRoot(document.getElementById("root"));
+// root.render(heading);
+
+// const heading = React.createElement("h1", { id: "sagar" }, "hey sagar ");
+// console.log(heading);
+// const root = ReactDOM.createRoot(document.getElementById("root"));
+// root.render(heading);
+
+// how to write nested structure and also siblings
+// {
+/* <div>
+<div>
+<h1>
+</h1>
+</div>
+</div> */
+// }
+
+const parent = React.createElement(
+  "div",
+  { id: "parent" },
+  React.createElement("div", { id: "child" }, [
+    React.createElement("h1", {}, "I am h1 tag"),
+    React.createElement("h2", {}, "I am h2 tag"),
+  ])
+);
+
+const root = ReactDOM.createRoot(document.body);
+root.render(parent);
