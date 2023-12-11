@@ -13,7 +13,7 @@
    => 1) performance :- because they are distributed globally , so when a user access your website , the content(react libraries) can be served from a server that is physically closer to them , so improves loading time. 2) version control .
 
 6) what is cross origin attribute in react ?
-   => When your React app tries to fetch data from a different website, the browser might block it for security. To allow this, you can use attributes like crossorigin in certain HTML elements (like <script> tags). This ensures a secure way to get data from other websites in your React app.
+   => When your React app tries to fetch data from a different website, the browser might block it for security. To allow this, you can use attributes like crossorigin in certain HTML elements (like <script> tags). This ensures a secure way to get data from other websites in your React app. (cors = cross origin resource sharing)
 
 7) What is inside that link of react ?
    => That's the code of react and plain javscript code , so react is just a javscript library.
@@ -31,12 +31,12 @@
 
 12) creating a root is job of react dom , because react needs a root where it can render things
 
-13) what is that mssing object ?
-    => that is the place where i can give id and class like attributes.make sure id is in ""
+13) what is that missing object ?
+    => that is the place where i can give id and class like attributes make sure id is in ""
 
 14) at the end of day react.createElement is also javascript object. it has props which are nothing but h1 tag , object and other argument they come under props.
 
-15) root.render job is to convert the javscript object that heading and when you do root.render method wil conbvert that heading tag to h1 and will put it out.
+15) root.render job is to convert the javscript object that heading and when you do root.render method wil convert that heading tag to h1 and will put it out.
 
 16) React element is an object that becomes while rendering onto dom
 
@@ -47,13 +47,13 @@
 19) will the order matters of script like your index.js and react (yes) it matters a lot if you write index.js first and then react it will throw an error because code inside index.js uses react so react is priority.
 
 20) WHAT DOES root.render do ?
-    => root.render() is the step where React turns your virtual UI representation (React element) into real DOM elements and updates the visible content on your web page.
+    => root.render() is the step where React turns my virtual UI representation (React element) into real DOM elements and updates the visible content on your web page.
 
 21) suppose if something alreafy existed here it will replace that something because react code is the priorirty ,
 
 22) React still needs html because ultimatiely it renders content to DOM , which is an html based structure
 
 23) i can just use
-    const root = ReactDOM.createRoot(document.body); for making react work , i don't need any div id to be present in html , but here when you wirte something in html it won't work so that is the reason why use particular part for making react work and also work in html
+    const root = ReactDOM.createRoot(document.body); for making react work , i don't need any div id to be present in html , but here when you write something in html it won't work so that is the reason why use particular part for making react work and also work in html
 
 24) react is a library not framework , react can be applied to smal page of our page like header or foooter it works only in place where we write react code but in framworks we have to follow it's rules
