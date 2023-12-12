@@ -1,0 +1,30 @@
+{
+  "name": "namastereact",
+  "version": "1.0.0",
+  "description": "Learning so using npm ",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sagargouda/react-learnings.git"
+  },
+  "keywords": [],
+  "author": "sagar reddy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sagargouda/react-learnings/issues"
+  },
+  "homepage": "https://github.com/sagargouda/react-learnings#readme",
+  "dependencies": {
+    "parcel": "^2.10.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "process": "^0.11.10"
+  },
+  "browserlist": [
+    "last 2 Chrome versions"
+  ]
+}
