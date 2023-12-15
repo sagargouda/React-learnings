@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Learning so using npm ",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "parcel Day3/index.html",
+    "build": "parcel build Day3/index.html"
   },
   "repository": {
     "type": "git",

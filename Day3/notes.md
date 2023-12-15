@@ -15,7 +15,7 @@
 9) Let's start JSX
 
 10) what is a react element?
-    => which are kind of equalent to dom elements , ou can think of React elements as a virtual representation or a blueprint for what will eventually become the actual DOM elements. React elements are not actual DOM elements themselves; they are lightweight JavaScript objects that describe what you want to render on the screen.
+    => which are kind of equalent to dom elements , you can think of React elements as a virtual representation or a blueprint for what will eventually become the actual DOM elements. React elements are not actual DOM elements themselves; they are lightweight JavaScript objects that describe what you want to render on the screen.
 
 11) there are 3 arguements when i create elements 1. what i wanna create , 2. id or classes 3. children
 
@@ -23,9 +23,9 @@
 
 13) whatever happpens inside react will happpen in root
 
-14) in javacsript react element is just an objectr
+14) in javacsript react element is just an object
 
-15) facebook developers created something calledf JSX , it is a javascript syntax and also jsx is not part of react , jsx is just a syntax extension of js.
+15) facebook developers created something called JSX , it is a javascript syntax and also jsx is not part of react , jsx is just a syntax extension of js.
 
 16) jsx is difffrent than html , not html inside js , jsx is html like syntax
 
@@ -37,4 +37,24 @@
 
 20) who is transpiling this code = parcel
 21) parcel is not doing it , but babel is doing it .
-22)
+22) babel is in node modules already
+23) how is jsx running ?
+    => before react.createelemnt is converted into object , it rendered into html element.
+    => when we give jsx , jsx is transpiled into react create element and react crete element is then rendered onto html as dom.
+
+24) babel converts jsx to react .creact elemnts and now rect understands it
+
+25) babel trsnapiles es6 code such that older browser understands
+
+26) babel is also js code which takes a piece of code and converts
+
+27) how babel converts (it reads tokens like angular brackets and AST and does it)
+
+28) if giivng attribute to jsx we have to use camelcase
+
+29) single line and multiple line thing
+    single line is perfect but for multi line you have to wrap it in round brackets. because babel needs to understand where babel is starting and it is ending.
+
+const example = (<h1>sagar is dumb i think may be </h1>)
+
+30.

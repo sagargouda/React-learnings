@@ -26,7 +26,7 @@ git crash course
 
 10) when you create a react app it automatically has npm in it , but we are in this project doin it maually to undertsand
     /////////////////////////////////////////
-11) to bring npm to our project use = npm init
+11) to bring npm to our project use = npm init (When you install Node.js, npm (Node Package Manager) is included with it. Running npm init initializes a new package.json file for your project and sets up the basic configuration. It's like waking up npm for your specific project.)
 
 12) Running npm init doesn't install npm itself into your project; rather, it initializes your project and sets up a package.json file. The package.json file is a configuration file for your Node.js project, and it includes metadata about your project as well as information about its dependencies, scripts, and other settings.
 
@@ -60,7 +60,7 @@ To summarize (^) = boht aage dekhnewala , (~) = Chote chote kadam dekhnewala .
 22. to serach in a file we use ctrl + shift + f
 
 23) what is package-lock.json ? and diffrence between package.json
-    => package.lock.json keeps the track of exact version , and package.json can have caret and tilde , basic difrence is packge.json is approx version , package-lock.json is eexact. there is integrity is SHA-512 hash , hash is present because something wil work on local and break on production so package-lock.json has hash which means exact version which was present in local will be there on production too,it helps maintain consistency and avoids potential issues that may arise due to different versions being installed in different environments.
+    => package-lock.json keeps the track of exact version , and package.json can have caret and tilde , basic diffrence is package.json is approx version , package-lock.json is exact. there is integrity is SHA-512 hash , hash is present because something wil work on local and break on production so package-lock.json has hash which means exact version which was present in local will be there on production too,it helps maintain consistency and avoids potential issues that may arise due to different versions being installed in different environments.
 
 24) when i created parcel there is another thing called node modules , these contains all the code that fetched from npm , node modules is like data base of those dependcies that a pacakge needs.
 
@@ -68,7 +68,7 @@ To summarize (^) = boht aage dekhnewala , (~) = Chote chote kadam dekhnewala .
     => okay , when we install our bundler parcel , it also has dependecies , and those dependecies has their own dependcies so this is known as transitive dependecies and none of them is garbage eveything we need.
 
 26) how would npm know what dependcies parcel have ?
-    => basicallly when i do npm install parcel , npm reads package.json file of parcel and fetches it's dependcy and instlls them in node modules and process is recursive and package-lock.json maintains specific versions of each installed dependency.
+    => basically when i do npm install parcel , npm reads package.json file of parcel and fetches it's dependcy and installs them in node modules and process is recursive and package-lock.json maintains specific versions of each installed dependency.
 
 27) how many package.json we have in our project ?
     => not 1 ,the main one is root of my project how many depedncies we have that many package.json and there you can see dependcies parcel using and got there and check that package.json and you seee that package.json file and dependceies
@@ -77,7 +77,7 @@ To summarize (^) = boht aage dekhnewala , (~) = Chote chote kadam dekhnewala .
 
 29) we don't need to put all these node modules to github so we use git ignore , it doesn't allow node modules into production .
 
-30) we shoudl put package.json and package-lock.json in git because they keep track of dependecies right , so we need to put on github , so why not node modules , because when i have these 2 packages i don't need node modules because they can regenerate that by npm install , bIncluding package.json and package-lock.json ensures that anyone cloning or pulling the project can run npm install and get the exact dependencies specified in those files. The package-lock.json file, with its integrity checks, ensures that the correct versions are installed, providing consistency across different environments.
+30) we shoudl put package.json and package-lock.json in git because they keep track of dependecies right , so we need to put on github , so why not node modules , because when i have these 2 packages i don't need node modules because they can regenerate that by npm install , Including package.json and package-lock.json ensures that anyone cloning or pulling the project can run npm install and get the exact dependencies specified in those files. The package-lock.json file, with its integrity checks, ensures that the correct versions are installed, providing consistency across different environments.
 
 31) whatever we can regenerate don't put in on git.
 

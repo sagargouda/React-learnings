@@ -42,18 +42,18 @@
 
 17) If you want to have siblings like 2 h1 tags then use array , when you do it will throw an error in developer tools.
 
-18) so now our hero coms to rescue 'JSX'. jsx will make our lives easy.
+18) so now our hero comes to rescue 'JSX'. jsx will make our lives easy.
 
 19) will the order matters of script like your index.js and react (yes) it matters a lot if you write index.js first and then react it will throw an error because code inside index.js uses react so react is priority.
 
 20) WHAT DOES root.render do ?
     => root.render() is the step where React turns my virtual UI representation (React element) into real DOM elements and updates the visible content on your web page.
 
-21) suppose if something alreafy existed here it will replace that something because react code is the priorirty ,
+21) suppose if something already existed here it will replace that something because react code is the priorirty ,
 
 22) React still needs html because ultimatiely it renders content to DOM , which is an html based structure
 
 23) i can just use
     const root = ReactDOM.createRoot(document.body); for making react work , i don't need any div id to be present in html , but here when you write something in html it won't work so that is the reason why use particular part for making react work and also work in html
 
-24) react is a library not framework , react can be applied to smal page of our page like header or foooter it works only in place where we write react code but in framworks we have to follow it's rules
+24) react is a library not framework , react can be applied to small section of our page like header or foooter it works only in place where we write react code but in framworks we have to follow it's rules
