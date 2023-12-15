@@ -129,14 +129,15 @@ To summarize (^) = boht aage dekhnewala , (~) = Chote chote kadam dekhnewala .
 
 57) read more on parcel.org
 58) diffrence between dev and prod build ,
-59) npx parcel build index.html , remove index.js in main in package.json
-60) you now get dist becuase of production build , because it is building it in dist . so you can delete that because you can regenrate it , see files in dist evrything are compressed.because in production eveyrtyhing done more seriously.
-61) so keep dist and partcel cache in gitignore
-62) dev build = npx parcel index.html
-63) production build = npx parcel build index.html
+59) A development build is for testing and debugging during development, containing additional features. A production build is optimized for deployment, with minimized size and enhanced performance for end-users.
+60) npx parcel build index.html , remove index.js in main in package.json
+61) you now get dist becuase of production build , because it is building it in dist . so you can delete that because you can regenrate it , see files in dist evrything are compressed.because in production eveyrtyhing done more seriously.
+62) so keep dist and partcel cache in gitignore
+63) dev build = npx parcel index.html
+64) production build = npx parcel build index.html
 
-64) browser's list = npm package , you have to tell your project what browsers your project can work like this in package.json file "browserlist":[
+65) browser's list = npm package , you have to tell your project what browsers your project can work like this in package.json file "browserlist":[
     "last 2 Chrome versions"
     ]
     go to website called browserlist you can check there
-65) now after doing all this we finally created our own create own react app.
+66) now after doing all this we finally created our own create own react app.
