@@ -1,0 +1,8 @@
+.con {
+  display: flex;
+}
+
+.image {
+  width: 40px;
+  border-radius: 50%;
+}
