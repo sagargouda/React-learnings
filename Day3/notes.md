@@ -29,13 +29,13 @@
 
 16) jsx is difffrent than html , not html inside js , jsx is html like syntax
 
-17) jsx is just a syntax to write react element to show that react elemnt is javscript object
+17) jsx is just a syntax to write react element to show that react element is javscript object
 
 18) js engine doesn't understand jsx because it understand ecma script(ES6) , that is what my broowser and js engine understand , so jsx is not valid js , so how is it working , parcel our homie is doing the job for us , when i write jsx , even before it goes to js engine it transpiled and js engine recive code that browser can undertstand.
 
 19) jsx code is transpiled before it reaches js engine.
 
-20) who is transpiling this code = parcel
+20) who is transpiling this code = parcel(babel)
 21) parcel is not doing it , but babel is doing it .
 22) babel is in node modules already
 23) how is jsx running ?
@@ -57,4 +57,55 @@
 
 const example = (<h1>sagar is dumb i think may be </h1>)
 
-30.
+30. everything in react is a component
+
+31) there are 2 types of component in react
+    i) class based component = old way of writing code
+    ii) functional component = new way of writing code
+
+32) react functional component is just javscript fucntion which returns some jsx fucntion code
+
+33) so name it with Cappital letter , it is a react way undestanding things
+
+34) fucntional component = javascript fucntions returning a react element is a fucntional component
+
+35) don't forget if you make functioonal components that thing should be in capital
+
+36) A React element is a plain JavaScript object representing part of the UI, while a React component is a reusable, self-contained code unit that may consist of one or more elements, encapsulating UI logic.
+
+37) in react elemnt the variable can be small letter at starting but in react component it should be Capital
+
+38) in react , each component should return a single parent element to rooot. so we can't do this
+const Heading = () => (
+  <Title />
+  <h1 className="sagar">Wassup</h1>
+);
+
+39) so we wrap that in a parent such as div
+const Heading = () => (
+  <div>
+    <Title />
+    <h1 className="sagar">Wassup</h1>
+  </div>
+);
+
+40) React expects a single root element, so wrapping them in a <div> or another container is a common practice:
+
+41) what is component composition = Component composition in React refers to the practice of combining or nesting multiple components to create a more complex user interface
+
+42) arrow fucniton is industry wise standard to write code
+
+43) inside {} you can write any js code
+    <h1>hey sagar {num}</h1>
+44) we have to use 2 braces for writing inline styles
+    const num = () => <h1 style={{ backgroundColor: "red" }}>hey sgaar</h1>;
+    outer = indicates we are embedding js expression within jsx
+    inner = we create js object literal for defining inline styles
+
+45) react fragment syntax <></> = it bascially allow me to group multiple react element without iluding extra dom
+    root.render(
+    <>
+    <Heading />
+    {num}
+    </>
+    );
