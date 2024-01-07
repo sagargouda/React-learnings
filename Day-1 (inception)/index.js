@@ -84,3 +84,12 @@
 
 // const root = ReactDOM.createRoot(document.body);
 // root.render(div);
+
+//?? practicing agaian
+
+// const parent = React.createElement("div", { id: "sagar" }, React.createElement("h1", {
+//  className: "reddy"
+// }, "hey sagarrrrrrrrrrrr"))
+ 
+// const root = ReactDOM.createRoot(document.getElementById("root"));
+// root.render(parent)

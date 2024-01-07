@@ -27,7 +27,7 @@
 10) why did react made 2 files ?
     => because react not only work for mobile it also work for phones , react 3d and all of these has diffrent methods so that is why there are 2 files
 
-11) In javscript we use document.createElement bnut in react it is replaced by React.createElement and it takes 3 arghuments 1) what tag you wanna create 2) an object 3) what we wanna put inside that tag.
+11) In javscript we use document.createElement but in react it is replaced by React.createElement and it takes 3 arghuments 1) what tag you wanna create 2) an object 3) what we wanna put inside that tag.
 
 12) creating a root is job of react dom , because react needs a root where it can render things
 
