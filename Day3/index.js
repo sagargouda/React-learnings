@@ -91,3 +91,50 @@ import ReactDOM from "react-dom/client";
 // const root = ReactDOM.createRoot(document.getElementById("root"));
 
 // root.render(<Header></Header>);
+
+
+//??? again revisiting
+
+// const jsxHeading = <h1>hey saaaaagar</h1>
+// const root = ReactDOM.createRoot(document.getElementById('root'))
+
+// root.render(jsxHeading)
+
+///?? let me practice
+
+// const Sagar = () => {
+//    return <h1>wassup man</h1>
+// }
+
+// const Sgaar = () => (
+//  <div className="kya" style={{backgroundColor: 'black'}}>
+//   <p style={{color:"white"}}>sagar got that beat man</p>
+//  </div>
+// )
+
+// const num = 43;
+
+// const Head = () => (
+//   <h1>kya bolt patte</h1>
+// )
+
+// const Tail = ({Head}) => (
+//  <div style={{ backgroundColor: "red" }}>kuch nai bhai
+//    <Head/>
+//  </div>
+// )
+
+// const Body = () => (
+//  //?? fragment syntax
+//  <>
+//   <Tail Head={Head}> 
+//   </Tail>
+//   <h1>
+//    i know it
+//   </h1>
+//  </>
+
+// )
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<Body/>)
