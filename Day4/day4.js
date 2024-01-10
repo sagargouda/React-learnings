@@ -54,90 +54,105 @@ const RestaurantCard = (props) => {
 };
 const restaurantList = [
   {
+    id: 1,
     name: "Spice Haven",
     cuisine: ["Indian", "Chinese"],
     rating: 4.2,
     deliveryTime: "30 minutes",
   },
   {
+    id: 2,
     name: "Savor Delight",
     cuisine: ["Italian", "Pizza"],
     rating: 4.0,
     deliveryTime: "40 minutes",
   },
   {
+    id: 3,
     name: "Tasty Bites",
     cuisine: ["Mexican", "Tacos"],
     rating: 4.8,
     deliveryTime: "25 minutes",
   },
   {
+    id: 4,
     name: "Flavor Fusion",
     cuisine: ["Mediterranean", "Hummus"],
     rating: 4.5,
     deliveryTime: "35 minutes",
   },
   {
+    id: 5,
     name: "Gourmet Grill",
     cuisine: ["Steakhouse", "BBQ"],
     rating: 4.3,
     deliveryTime: "45 minutes",
   },
   {
+    id: 6,
     name: "Crispy Crunch",
     cuisine: ["Fast Food", "Burgers"],
     rating: 4.1,
     deliveryTime: "20 minutes",
   },
   {
+    id: 7,
     name: "Sushi Delight",
     cuisine: ["Japanese", "Sushi"],
     rating: 4.7,
     deliveryTime: "50 minutes",
   },
   {
+    id: 8,
     name: "Veggie Vibes",
     cuisine: ["Vegetarian", "Salads"],
     rating: 4.4,
     deliveryTime: "28 minutes",
   },
   {
+    id: 9,
     name: "Pasta Paradise",
     cuisine: ["Italian", "Pasta"],
     rating: 4.6,
     deliveryTime: "38 minutes",
   },
   {
+    id: 10,
     name: "Thai Temptations",
     cuisine: ["Thai", "Curry"],
     rating: 4.9,
     deliveryTime: "22 minutes",
   },
   {
+    id: 11,
     name: "BBQ Bonanza",
     cuisine: ["BBQ", "Grill"],
     rating: 4.3,
     deliveryTime: "40 minutes",
   },
   {
+    id: 12,
     name: "Mango Tango",
     cuisine: ["Fruit Bar", "Smoothies"],
     rating: 4.2,
     deliveryTime: "33 minutes",
   },
   {
+    id: 13,
     name: "Wok Wonder",
     cuisine: ["Chinese", "Stir Fry"],
     rating: 4.5,
     deliveryTime: "30 minutes",
   },
   {
+    id: 14,
     name: "Mediterranean Marvel",
     cuisine: ["Mediterranean", "Falafel"],
     rating: 4.7,
     deliveryTime: "35 minutes",
   },
   {
+    id: 15,
     name: "Bakery Bliss",
     cuisine: ["Bakery", "Pastries"],
     rating: 4.0,
@@ -150,7 +165,8 @@ const Body = () => (
     <div className="res-container">
       {/* it will contain restro cards */}
       {restaurantList.map((list, index) => (
-        <RestaurantCard resData={list} />
+        // key = {list.id} or key = {index} but index is a bad practice
+        <RestaurantCard key={list.id} resData={list} />
       ))}
       {/* <RestaurantCard
         resName="Medhana food"
