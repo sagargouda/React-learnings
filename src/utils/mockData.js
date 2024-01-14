@@ -1,53 +1,4 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-
-// Components
-// header, loggo, nav items
-// body search , restraurant container , restro card
-// footer , copyright , links , address , contact
-
-const Header = () => (
-  <div className="header">
-    <div className="logo-container">
-      <img
-        src="https://img.freepik.com/free-vector/restaurant-logo-template_23-2149493636.jpg?w=740&t=st=1704760307~exp=1704760907~hmac=d2640b22656d9243b201bf8dc1a350f34cdca0edb4f4555d459cf42270fa1ec2"
-        className="logo"
-        width={100}
-      />
-    </div>
-
-    {/* nav items */}
-    <div className="nav-items">
-      <ul>
-        <li>Home</li>
-        <li>About Us</li>
-        <li>Contact Us</li>
-        <li>Cart</li>
-      </ul>
-    </div>
-  </div>
-);
-// destructured on the fly without using prop
-// {
-//   resName, cuisine, deliveryTime, rating;
-// }
-//  { resData } we can also put there in place of prop
-const RestaurantCard = (props) => {
-  const { resData } = props;
-
-  //?? destructuring with optional chaining
-  // const { name, cuisine, rating, deliveryTime } = resData;
-
-  return (
-    <div className="res-card">
-      <img className="res-img" src={resData.info.image.url} alt="res-logo" />
-      <h1 className="res-heading">{resData.info.name}</h1>
-      <h4>{resData.info.rating.rating_text}</h4>
-      <h4>{resData.info.locality.name}</h4>
-    </div>
-  );
-};
-const restaurantList = [
+let restaurantList = [
   {
     type: "restaurant",
     info: {
@@ -62,7 +13,7 @@ const restaurantList = [
       rating: {
         has_fake_reviews: 0,
         aggregate_rating: "4.3",
-        rating_text: "4.3",
+        rating_text: 4.3,
         rating_subtitle: "Very Good",
         rating_color: "5BA829",
         votes: "3,445",
@@ -206,7 +157,7 @@ const restaurantList = [
       rating: {
         has_fake_reviews: 0,
         aggregate_rating: "4.3",
-        rating_text: "NEW",
+        rating_text: 3.0,
         rating_subtitle: "Very Good",
         rating_color: "5BA829",
         votes: "75",
@@ -1922,30 +1873,5 @@ const restaurantList = [
     ],
   },
 ];
-const Body = () => (
-  <div className="body">
-    <div className="search">Search</div>
-    <div className="res-container">
-      {/* it will contain restro cards */}
-      {restaurantList.map((list, index) => (
-        // key = {list.id} or key = {index} but index is a bad practice
-        <RestaurantCard key={list.id} resData={list} />
-      ))}
-      {/* <RestaurantCard
-        resName="Medhana food"
-        cuisine="chapathi,south indian , ice creams"
-        rating="3.7 stars"
-        deliveryTime="24 minute"
-      /> */}
-    </div>
-  </div>
-);
 
-const AppLayout = () => (
-  <div className="app">
-    <Header />
-    <Body />
-  </div>
-);
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<AppLayout />);
+export default restaurantList;
